@@ -1,0 +1,7 @@
+# we will be updating s3 bucket by implementing acl.
+
+Resources:
+  MyS3Bucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      AccessControl: PublicRead

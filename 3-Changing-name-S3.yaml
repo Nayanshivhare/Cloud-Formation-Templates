@@ -1,0 +1,9 @@
+# this update will delete the old bucket and will create a new bucket.
+# changetype=replacement
+
+Resources:
+  MyS3Bucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      AccessControl: PublicRead
+      BucketName: "Demo-Bucket12345612"
