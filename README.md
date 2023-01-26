@@ -1,6 +1,6 @@
 # Cloud-Formation-Templates
 
-https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-s3-bucket.html
+https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-template-resource-type-ref.html
 
 
 # Cloud Formation Update Behaviour:
