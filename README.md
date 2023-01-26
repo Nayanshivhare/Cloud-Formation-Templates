@@ -10,6 +10,9 @@ It depends on what you submit.
 2. Update with some interruption
 3. Replacement
 
+
+
+
 # CloudFormation Template Paramter that are common to any CloudFormation :
 -   Tags
 -   Permission
@@ -32,4 +35,10 @@ It depends on what you submit.
 - Outputs
 - Conditionals
 - Rules
+
+# Parameter:
+
+- It a input that you provide to your stack that you are deploying.
+- And it can be leveraged to reference parameters.
+-   
 

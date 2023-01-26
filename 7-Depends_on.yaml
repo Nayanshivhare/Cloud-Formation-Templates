@@ -1,0 +1,21 @@
+#when you define attribute Depends on your resource that you are creating
+# will be dependent on what you are mentioning.
+# in below example our ec2 instance is dependent on s3.
+# it means it will be create after creation of s3.
+
+Parameters:
+  ImageId:
+    Type: AWS::SSM::Parameter::Value<AWS::EC2::Image::Id>
+    Default: /aws/service/ami-amazon-linux-latest/amzn2-ami-hvm-x86_64-gp2
+
+Resources:
+  S3Bucket:
+    Type: AWS::S3::Bucket
+
+  # EC2 instance created after the S3 bucket because we have mentioned depends on
+  Ec2Instance:
+    Type: AWS::EC2::Instance
+    Properties:
+      ImageId: !Ref ImageId
+      InstanceType: t2.micro
+    DependsOn: MyS3Bucket
