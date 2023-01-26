@@ -40,5 +40,5 @@ It depends on what you submit.
 
 - It a input that you provide to your stack that you are deploying.
 - And it can be leveraged to reference parameters.
--   
+
 
